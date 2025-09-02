@@ -1,0 +1,9 @@
+services:
+  app:
+    container_name: socket-server
+    restart: unless-stopped
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8081:8081"
